@@ -9,29 +9,34 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="card">
 
       <img class="hero-image" src="images\illustration-hero.svg" alt="hero-image">
 
-      <div class="text">
-        <h2 class="title">Order Summary</h2>
-        <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-          device anywhere you like!</p>
+      <div class="card-content">
+        
+        <div class="text">
+          <h2 class="title">Order Summary</h2>
+          <p class="order-description">You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+        </div>
+  
+        <div class="card-price">
+          <img src="images\icon-music.svg" alt="">
+          <div class="plan-info">
+            <h3 class="annual-plan">Annual Plan</h3>
+            <p>$59.99/year</p>
+          </div>
+          <a class="change" href="#">Change</a>  <!-- here we are not doing anything but on a full website it redirects to plans page -->
+        </div>
+  
+          <div class="card-submit">
+            <button class="proceed-button">Proceed to Payment</button>
+            <p class="cancel" >Cancel Order</p>
+          </div>
       </div>
 
-      <div class="plan-container">
-        <img src="images\icon-music.svg" alt="">
-        <div class="plan-info">
-          <h2>Annual Plan</h2>
-          <p>$59.99/year</p>
-        </div>
-        <a href="#">Change</a>  <!-- here we are not doing anything but on a full website it redirects to plans page -->
-      </div>
-
-        <div>
-          <button>Proceed to Payment</button>
-          <p>Cancel Order</p>
-        </div>
+      
 
     
   </div>

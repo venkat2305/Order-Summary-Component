@@ -16,6 +16,7 @@
   }
 
 body{
+    font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     background-image: url("images/pattern-background-desktop.svg");    /*important*/
     background-repeat: no-repeat;
@@ -25,28 +26,70 @@ body{
     justify-content: center;
 }
 
-.container{
+.card{
     background-color: white;
-    width: 450px;
-
-    
-    
+    width: 400px;
+    border-radius: 20px;
 }
 
-.plan-container{
-    display: flex;
-    background-color: var(--very-pale-blue);
-    padding: 20px;
-    border-radius: 13px;
-}
-
-.text{
-    padding: 30px;
-
+.hero-image{
+    width: 100%;
+    /* image doesn't have rounder corners */
 }
 
 .title{
-    color: var(--dark-blue);
     font-weight: 900;
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 30px;
+}
 
+.order-description{
+    color: var(--desaturated-blue);
+    padding: 15px;
+    text-align: center  ;
+}
+
+.card-content{
+    padding: 35px;
+}
+
+.card-price{
+    display: flex;
+    background-color: var(--very-pale-blue);
+    padding: 15px;
+    border-radius: 13px;
+    align-items: center;
+}
+
+.plan-info{
+    padding: 0 20px;
+}
+
+.change{
+    padding-left: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+
+.card-submit{
+    padding-top: 25px;
+}
+
+.proceed-button{
+    padding: 15px;
+    width: 100%;
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+}
+
+.cancel{
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    text-align: center;
+    padding-top: 25px;
 }
