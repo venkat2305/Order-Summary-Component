@@ -23,18 +23,21 @@ body{
     background-size: cover;                                            /*important*/
     background-color: var(--pale-blue);
     display: flex;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
+    min-height: 100vh;
 }
 
 .card{
     background-color: white;
     width: 400px;
     border-radius: 20px;
+    overflow: hidden;
+    /* overflow is hidden means if the content of card overflows , then hide it */
 }
-
+/* the hero image is overflowing the card image due to its squrae edges */
 .hero-image{
     width: 100%;
-    /* image doesn't have rounder corners */
 }
 
 .title{
@@ -42,16 +45,21 @@ body{
     color: var(--dark-blue);
     text-align: center;
     font-size: 30px;
+    
 }
 
 .order-description{
     color: var(--desaturated-blue);
     padding: 15px;
     text-align: center  ;
+    line-height: 25px;
 }
 
 .card-content{
     padding: 35px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
 }
 
 .card-price{
@@ -60,36 +68,63 @@ body{
     padding: 15px;
     border-radius: 13px;
     align-items: center;
+    /* justify-content: space-between; */
 }
 
 .plan-info{
-    padding: 0 20px;
+    padding: 0 25px;
 }
 
-.change{
+.price{
+    color: var(--desaturated-blue);
+}
+
+.card-price a{
     padding-left: 38px;
     font-size: 14px;
     font-weight: 700;
     color: var(--bright-blue);
 }
 
+.card-price a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
 .card-submit{
     padding-top: 25px;
 }
 
-.proceed-button{
-    padding: 15px;
+button{
     width: 100%;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border: none;
+    font-weight: 700;
+}
+
+/* similar css props of both buttons are written one time above */
+
+.proceed-button{
+    padding: 1rem 0;
     background-color: var(--bright-blue);
     color: white;
-    font-weight: 700;
-    border: none;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 20px 30px -8px rgb(197, 189, 245) ; 
+}
+
+.proceed-button:hover{
+    opacity: 0.8;
 }
 
 .cancel{
     color: var(--desaturated-blue);
-    font-weight: 700;
-    text-align: center;
     padding-top: 25px;
+    background-color: white;
+}
+
+/* width 100% is used in the buttons to center it */
+
+.cancel:hover{
+    color: black;
 }
